@@ -154,13 +154,14 @@ p {
     margin: 2rem;
     border-radius: 20px;
     background-color: transparent;
-    box-shadow: 0px 0px 5px 3px yellow;
+    box-shadow: 0px 0px 5px 3px white;
     color: white;
     transition: 0.5s;
 }
 
 .row .card:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 5px 3px yellow;
 }
 
 /* AKHIR ISI FOTO */
@@ -264,6 +265,36 @@ h2 {
 /* AKHIR ABOUT */
 
 
+/* AWAL CLOSING */
+
+.closing {
+    width: 65%;
+}
+
+.closing .close {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.close a {
+    color: gray;
+    text-decoration: none;
+}
+
+.cpr {
+    border-top: 2px solid yellow;
+}
+
+.cprsymbol {
+    width: 100%;
+}
+
+.cprsymbol h7 {
+    color: white;
+    text-decoration: none;
+}
+/* AKHIR CLOSING */
 
 
 
@@ -370,7 +401,18 @@ h2 {
     .navbar-bawah .nav-sec a {
         font-size: 0.6rem;;
     }
+    .tentang h5 {
+        font-size: 0.7rem;
+    }
 }
+
+@media (max-width: 950px) {
+    html {
+        font-size: 70.5%;
+    }
+    .tentang h5 {
+        font-size: 1.4rem;
+    }
 
 @media (max-width: 900px) {
     html {
@@ -385,6 +427,18 @@ h2 {
     .navbar-bawah .nav-sec a {
         font-size: 1rem;
         margin: -5px;
+    }
+    .tentang h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 760px) {
+    html {
+        font-size: 70.5%;
+    }
+    .tentang .input-box {
+        display: none;
     }
 }
 
@@ -402,6 +456,12 @@ h2 {
         font-size: 0.9rem;
         margin: -5px;
     }
+    .tentang h5 {
+        font-size: 0.7rem;
+    }
+    .tentang .input-box {
+        display: none;
+    }
 }
 
 @media (max-width: 620px) {
@@ -418,8 +478,19 @@ h2 {
         font-size: 0.6rem;
         margin: -5px;
     }
+    .tentang .input-box {
+        display: none;
+    }
 }
 
+@media (max-width: 560px) {
+    html {
+        font-size: 60%;
+    }
+    .sosmed h5 {
+        display: none;
+    }
+}
 @media (max-width: 480px) {
     html {
         font-size: 60%;
@@ -488,6 +559,63 @@ h2 {
         padding: 0.5rem;
         transition: 0.5s;
     }
+    .tentang .input-box {
+        display: none;
+    }
+    .closing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+    .navbar-extra {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 40rem;
+    }
+    .closing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 60%;
+    }
+    .tentang h5 span{
+        letter-spacing: 0;
+    }
+    .navbar-extra {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 37rem;
+    }
+    .closing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 60%;
+    }
+    .tentang h5 span{
+        letter-spacing: 0;
+    }
+    .navbar-extra {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 35rem;
+    }
+    .closing {
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px) {
@@ -497,5 +625,29 @@ h2 {
     .navbar-bawah .nav-sec a {
         font-size: 0.4rem;
         margin: -5px;
+    }
+    .tentang .input-box {
+        display: none;
+    }
+    .tentang h5 {
+        letter-spacing: 0;
+    }
+    .closing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 280px) {
+    html {
+        font-size: 60%;
+    }
+    .navbar-extra {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 28rem;
+    }
+    .closing {
+        width: 100%;
     }
 }
